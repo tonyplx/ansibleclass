@@ -20,7 +20,7 @@
       group: "{{ item.groups }}"
     loop:
       - { name: 'homer', groups: 'Developers' }
-      - { name: 'bart', groups: 'It' }
+      - { name: 'bart', groups: 'IT' }
       - { name: 'lisa', groups: 'Management' }
       - { name: 'ned', groups: 'Finance' }
       - { name: 'moe', groups: 'Developers' }
