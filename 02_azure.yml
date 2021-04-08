@@ -26,7 +26,8 @@
       virtual_network_name: "{{ virtual_network_name }}"
       name: "{{ subnet }}"
       address_prefix_cidr: "10.99.0.0/24"
-      - name: Create a public ip address for webserver
+
+  - name: Create a public ip address for webserver
     azure_rm_publicipaddress:
       resource_group: "{{ resource_group }}"
       name: public_ip_webserver
