@@ -2,8 +2,8 @@
 - hosts: linuxservers
   become: yes
 
-  vars: 
-      package: 
+  vars:
+      package:
          - httpd
          - mariadb-server
          - php
@@ -11,8 +11,8 @@
 
 
 
-  
-  tasks: 
+
+  tasks:
   - name: Install Packages
     ansible.builtin.package:
       name: "{{ package }}"
@@ -42,9 +42,8 @@
       state: enabled
     notify: firewall reload
 
-  handlers: 
+  handlers:
   - name: firewall reload
     ansible.builtin.systemd:
       name: firewalld
       state: reloaded
-      
