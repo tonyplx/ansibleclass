@@ -2,7 +2,7 @@
 - hosts: localhost
   connection: local
   vars:
-    user: tonyp
+    user: user4
   tasks:
   - name: Create resource group
     azure_rm_resourcegroup:
