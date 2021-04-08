@@ -8,6 +8,6 @@
   
   tasks: 
   - name: Install Packages
-    ansible.buildin.package
+    ansible.builtin.package
       name: "{{ package }}"
       state: latest
