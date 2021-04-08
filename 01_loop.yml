@@ -6,7 +6,7 @@
   - name: Ensure group developers exists
     group:
      name: "{{ item }}"
-      state: present
+     state: present
     loop:
       - IT
       - Developers
