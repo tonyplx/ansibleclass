@@ -6,9 +6,8 @@
     - ~/secret.yml
   vars:
     ansible_password: "{{ windows_password }}"
-  tasks: 
+  tasks:
   - name: Install IIS (Web-Server Only)
     win_feature:
       name: Web-Server
       state: present
-      
